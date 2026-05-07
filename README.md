@@ -1,6 +1,7 @@
-# Mapillary Roadside Object Classification and Grad-CAM Localization
+# Roadside object geolocation from street-level images with reduced  supervision.
+## The paper can be found [here](https://ieeexplore.ieee.org/abstract/document/10715092)
 
-This repository contains a modular PyTorch pipeline for weakly supervised roadside object localization from street-level imagery.
+We propose a method for automated detection and geolocation of roadside objects from street-level images by leveraging historical records of these objects. Such partial and/or noisy geo-records are often held by infrastructure owners and require frequent updating.  We aim to reduce the amount of image-level supervision required for the deployment of deep learning methods to geolocation problem from segmentation masks (very costly) to binary image labels (lower cost). Our proposed method integrates an image classification deep learning pipeline with Grad-CAMs and watershed transform to identify the positions of roadside objects of interest in the images. The geolocation is performed by deploying the existing Markov Random Field-based optimization module. We analyze the robustness of the proposed low-supervision geolocation model to noisy records. We report experiments for the detection of traffic lights and public bins, with geolocation of the latter performed in central Dublin.
 
 The notebook workflow has been separated into independent components for:
 
