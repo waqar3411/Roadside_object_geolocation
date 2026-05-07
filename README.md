@@ -3,6 +3,10 @@
 
 We propose a method for automated detection and geolocation of roadside objects from street-level images by leveraging historical records of these objects. Such partial and/or noisy geo-records are often held by infrastructure owners and require frequent updating.  We aim to reduce the amount of image-level supervision required for the deployment of deep learning methods to geolocation problem from segmentation masks (very costly) to binary image labels (lower cost). Our proposed method integrates an image classification deep learning pipeline with Grad-CAMs and watershed transform to identify the positions of roadside objects of interest in the images. The geolocation is performed by deploying the existing Markov Random Field-based optimization module. We analyze the robustness of the proposed low-supervision geolocation model to noisy records. We report experiments for the detection of traffic lights and public bins, with geolocation of the latter performed in central Dublin.
 
+## Propsoed Method:
+<img width="1262" height="593" alt="Overall_Proposed1" src="https://github.com/user-attachments/assets/e451c7e5-47c8-41fa-9aa6-d0d331a0276c" />
+
+
 The notebook workflow has been separated into independent components for:
 
 1. Training a ResNet binary classifier.
