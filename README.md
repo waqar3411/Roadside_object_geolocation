@@ -7,6 +7,8 @@ We propose a method for automated detection and geolocation of roadside objects 
 <img width="1262" height="593" alt="Overall_Proposed1" src="https://github.com/user-attachments/assets/e451c7e5-47c8-41fa-9aa6-d0d331a0276c" />
 
 
+
+
 The notebook workflow has been separated into independent components for:
 
 1. Training a ResNet binary classifier.
@@ -49,11 +51,11 @@ The training and validation scripts use `torchvision.datasets.ImageFolder`, so t
 
 ```text
 data_root/
-├── Train_1000/
+├── Train/
 │   ├── 0/
 │   └── 1/
 │
-└── Test_new/
+└── Test/
     ├── 0/
     └── 1/
 ```
@@ -77,10 +79,10 @@ pip install grad-cam
 
 ```bash
 python scripts/train_classifier.py \
-    --data-root /path/to/15m \
-    --train-folder Train_1000 \
-    --valid-folder Test_new \
-    --model-name seresnet34 \
+    --data-root /path/to/ \
+    --train-folder Train \
+    --valid-folder Test \
+    --model-name resnet34 \
     --epochs 15 \
     --batch-size 8 \
     --lr 0.0001 \
