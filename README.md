@@ -4,7 +4,7 @@ This repository contains a modular PyTorch pipeline for weakly supervised roadsi
 
 The notebook workflow has been separated into independent components for:
 
-1. Training a ResNet/SEResNet binary classifier.
+1. Training a ResNet binary classifier.
 2. Evaluating classification performance.
 3. Saving predicted test images by class.
 4. Generating Grad-CAM localization maps.
